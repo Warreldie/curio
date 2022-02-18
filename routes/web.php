@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/bookclub', function(){
+    return view('bookclub/index');
+});
+Route::get('/bookshelf', function(){
+    $data['books']=[
+        "Lolita",
+        "The Count of Monte Cristo",
+        "Edgar Allen Poems",
+        "Pride and Prejudice"
+    ];
+    $data['author']=[
+        "Vladimir Nabokov",
+        "Alexandre Dumas",
+        "Edgar Allen",
+        "Oscar Wilde"
+    ];
+    return view('bookshelf/index', $data);
+});
+Route::get('/locations', function(){
+    return view('locations/index');
+});
+Route::get('/settings', function(){
+    return view('settings/index');
 });
