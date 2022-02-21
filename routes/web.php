@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,11 @@ Route::get('/locations', function(){
 Route::get('/settings', function(){
     return view('settings/index');
 });
+
+Route::get('/users', function(){
+    $users = \DB::table("users")->get();
+    $data['users'] = $users;
+    return view('users/index', $data);
+});
+Route::get('/books', [BookController::class, 'index']);
+Route::get('/books/{book}', [BookController::class, 'details']);
