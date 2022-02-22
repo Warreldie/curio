@@ -1,3 +1,7 @@
+@extends('layouts/app')
+
+@section('content')
+
 <h1>Bookshelf</h1>
 
 <ul>
@@ -5,3 +9,5 @@
     <li>{{ $book }}</li>
     @endforeach
 </ul>
+
+@endsection

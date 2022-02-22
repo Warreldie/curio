@@ -1,2 +1,7 @@
-<h1>Details {{ $book->name }}</h1>
-<p>{{ $book->bio }}</p>
+@extends('layouts/app')
+
+@section('content')
+
+<h1>Details {{ $book->title }}</h1>
+
+@endsection

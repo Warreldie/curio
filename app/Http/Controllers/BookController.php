@@ -11,7 +11,7 @@ class BookController extends Controller
         $data['books'] = $books;
         return view('books/index', $data);
     }
-    public function details(\App\Models\Book $book){
+    public function details(\App\Models\Book $book){ 
         $data['book'] = $book;
         return view('books/details', $data);
     }
