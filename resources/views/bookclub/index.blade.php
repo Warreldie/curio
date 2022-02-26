@@ -2,6 +2,8 @@
 
 @section('content')
 
-<h1>Bookclub</h1>
+<x-navigation/>
+
+<x-page-header page="Bookclub"/>
 
 @endsection

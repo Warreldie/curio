@@ -2,7 +2,9 @@
 
 @section('content')
 
-<h1>Bookshelf</h1>
+<x-navigation/>
+
+<x-page-header page="Bookshelf"/>
 
 <ul>
     @foreach($books as $book)

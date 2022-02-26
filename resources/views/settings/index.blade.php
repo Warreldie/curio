@@ -2,6 +2,8 @@
 
 @section('content')
 
-<h1>Settings</h1>
+<x-navigation/>
+
+<x-page-header page="Settings"/>
 
 @endsection

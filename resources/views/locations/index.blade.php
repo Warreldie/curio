@@ -2,6 +2,8 @@
 
 @section('content')
 
-<h1>Locations</h1>
+<x-navigation/>
+
+<x-page-header page="Locations"/>
 
 @endsection

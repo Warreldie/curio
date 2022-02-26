@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\WriterController;
+use App\Http\Controllers\SignUpController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +54,5 @@ Route::get('/writers', [WriterController::class, 'index']);
 Route::get('/writers/{writer}', [WriterController::class, 'details']);
 Route::get('/books', [BookController::class, 'index']);
 Route::get('/books/{book}', [BookController::class, 'details']);
+Route::get('/signup', [SignUpController::class, 'create']);
+Route::get('/signup/store', [SignUpController::class, 'store']);

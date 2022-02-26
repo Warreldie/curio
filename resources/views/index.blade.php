@@ -2,6 +2,10 @@
 
 @section('content')
 
-<h1>Dashboard</h1>
+<x-navigation/>
+
+<x-page-header page="Dashboard"/>
+
+<x-button cta="Continue Reading"/>
 
 @endsection
