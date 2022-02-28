@@ -55,4 +55,4 @@ Route::get('/writers/{writer}', [WriterController::class, 'details']);
 Route::get('/books', [BookController::class, 'index']);
 Route::get('/books/{book}', [BookController::class, 'details']);
 Route::get('/signup', [SignUpController::class, 'create']);
-Route::get('/signup/store', [SignUpController::class, 'store']);
+Route::post('/signup/store', [SignUpController::class, 'store']);
