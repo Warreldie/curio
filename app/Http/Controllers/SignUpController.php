@@ -17,7 +17,6 @@ class SignUpController extends Controller
             'email' => 'required'
         ]);
 
-
         $user = new User();
         $user->name = $request->input('name');
         $user->password = $request->input('password');
