@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('create-writer', function(\App\Models\User $user){
+            return $user->id === 11; 
+        });
     }
 }

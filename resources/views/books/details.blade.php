@@ -1,7 +1,9 @@
 @extends('layouts/app')
 
 @section('content')
+<x-navigation/>
 
-<h1>Details {{ $book->title }}</h1>
+<x-page-header page="{{ $book->title }}"/>
 
+<x-button cta="Delete"/>
 @endsection

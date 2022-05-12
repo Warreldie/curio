@@ -1,9 +1,11 @@
 @extends('layouts/app')
 
 @section('content')
+<x-navigation/>
 
-<h1>Details {{ $writer->name }}</h1>
-<p>{{ $writer->bio }}</p>
+<x-page-header page="{{ $writer->name }}"/>
+
+<p class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8" >{{ $writer->bio }}</p>
 
 <h2>Books</h2>
 <ul>

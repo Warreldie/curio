@@ -24,21 +24,6 @@ Route::get('/', function () {
 Route::get('/bookclub', function(){
     return view('bookclub/index');
 });
-Route::get('/bookshelf', function(){
-    $data['books']=[
-        "Lolita",
-        "The Count of Monte Cristo",
-        "Edgar Allen Poems",
-        "Pride and Prejudice"
-    ];
-    $data['author']=[
-        "Vladimir Nabokov",
-        "Alexandre Dumas",
-        "Edgar Allen",
-        "Oscar Wilde"
-    ];
-    return view('bookshelf/index', $data);
-});
 Route::get('/locations', function(){
     return view('locations/index');
 });
@@ -52,10 +37,35 @@ Route::get('/users', function(){
     return view('users/index', $data);
 });
 Route::get('/writers', [WriterController::class, 'index']);
+Route::get('/writers/create', [WriterController::class, 'create']);
+Route::post('/writers/store', [WriterController::class, 'store']);
 Route::get('/writers/{writer}', [WriterController::class, 'details']);
+
 Route::get('/books', [BookController::class, 'index']);
+Route::get('/bookshelf', [BookController::class, 'bookshelf']);
+Route::get('/books/create', [BookController::class, 'create']);
+Route::post('/books/store', [BookController::class, 'store']);
 Route::get('/books/{book}', [BookController::class, 'details']);
+
 Route::get('/signup', [SignUpController::class, 'create']);
 Route::post('/signup/store', [SignUpController::class, 'store']);
+
 Route::get('/signin', [SignInController::class, 'signin']);
 Route::post('/signin/try', [SignInController::class, 'try']);
+
+/*
+    $data['books']=[
+        "Lolita",
+        "The Count of Monte Cristo",
+        "Edgar Allen Poems",
+        "Pride and Prejudice"
+    ];
+    $data['author']=[
+        "Vladimir Nabokov",
+        "Alexandre Dumas",
+        "Edgar Allen",
+        "Oscar Wilde"
+    ];
+
+    function(){return view('bookshelf/index', $data);}
+*/

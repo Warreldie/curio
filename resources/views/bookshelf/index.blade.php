@@ -3,13 +3,18 @@
 @section('content')
 
 <x-navigation/>
-
 <x-page-header page="Bookshelf"/>
+<div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
 
-<ul>
+    <livewire:book-search /> 
+
+    <ul>
     @foreach($books as $book)
-    <li>{{ $book }}</li>
+    <div>
+        <a href="/books/{{ $book->id }}">{{ $book->title }}</a>
+    </div>
     @endforeach
-</ul>
+    </ul>
 
-@endsection
+    @endsection
+</div>
