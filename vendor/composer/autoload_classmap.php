@@ -14,6 +14,7 @@ return array(
     'App\\Http\\Controllers\\SignUpController' => $baseDir . '/app/Http/Controllers/SignUpController.php',
     'App\\Http\\Controllers\\WriterController' => $baseDir . '/app/Http/Controllers/WriterController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
+    'App\\Http\\Livewire\\BookSearch' => $baseDir . '/app/Http/Livewire/BookSearch.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',

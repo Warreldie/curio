@@ -8,13 +8,5 @@
 
     <livewire:book-search /> 
 
-    <ul>
-    @foreach($books as $book)
-    <div>
-        <a href="/books/{{ $book->id }}">{{ $book->title }}</a>
-    </div>
-    @endforeach
-    </ul>
-
     @endsection
 </div>
