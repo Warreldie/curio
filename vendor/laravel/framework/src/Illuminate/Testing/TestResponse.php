@@ -507,7 +507,7 @@ EOF;
         $expiresAt = Carbon::createFromTimestamp($cookie->getExpiresTime());
 
         PHPUnit::assertTrue(
-            0 !== $cookie->getExpiresTime() && $expiresAt->lessThan(Carbon::now()),
+            $cookie->getExpiresTime() !== 0 && $expiresAt->lessThan(Carbon::now()),
             "Cookie [{$cookieName}] is not expired, it expires at [{$expiresAt}]."
         );
 
@@ -530,7 +530,7 @@ EOF;
         $expiresAt = Carbon::createFromTimestamp($cookie->getExpiresTime());
 
         PHPUnit::assertTrue(
-            0 === $cookie->getExpiresTime() || $expiresAt->greaterThan(Carbon::now()),
+            $cookie->getExpiresTime() === 0 || $expiresAt->greaterThan(Carbon::now()),
             "Cookie [{$cookieName}] is expired, it expired at [{$expiresAt}]."
         );
 
@@ -811,6 +811,19 @@ EOF;
     }
 
     /**
+     * Assert that the response does not contain the given path.
+     *
+     * @param  array  $data
+     * @return $this
+     */
+    public function assertJsonMissingPath(string $path)
+    {
+        $this->decodeResponseJson()->assertMissingPath($path);
+
+        return $this;
+    }
+
+    /**
      * Assert that the response has a given JSON structure.
      *
      * @param  array|null  $structure
@@ -992,6 +1005,17 @@ EOF;
     }
 
     /**
+     * Get the JSON decoded body of the response as a collection.
+     *
+     * @param  string|null  $key
+     * @return \Illuminate\Support\Collection
+     */
+    public function collect($key = null)
+    {
+        return Collection::make($this->json($key));
+    }
+
+    /**
      * Assert that the response view equals the given value.
      *
      * @param  string  $value
@@ -1165,8 +1189,6 @@ EOF;
         }
 
         $this->assertSessionHas('errors');
-
-        $keys = (array) $errors;
 
         $sessionErrors = $this->session()->get('errors')->getBag($errorBag)->getMessages();
 
