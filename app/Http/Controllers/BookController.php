@@ -27,7 +27,7 @@ class BookController extends Controller
         return redirect('books/');
     }
     public function bookshelf(){
-        $books = \DB::table('books')->get();
+        $books = \DB::table('books')->paginate(5);
         $data['books'] = $books;
         return view('bookshelf/index', $data);
     }
