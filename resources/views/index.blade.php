@@ -8,12 +8,23 @@
     </div>
     <div class="w-full">
         <x-page-header page="Dashboard"/>
-        <div class="bg-slate-200">
-            <div class="flex p-2">
-                <x-info text="Reveal next event"/>
-                <x-info text="Total books read"/>
+        <div>
+            <div class="flex info">
+                <x-info text="Reveal next event" number="1 WEEK"/>
+                <x-info text="Total books read" number="3"/>
+                <x-info text="Total in bookself" number="4"/>
+                <x-info text="Total hours read" number="75.3"/>
             </div>
-            <x-button cta="Continue Reading"/>
+            <div class="flex main">
+                <div class="flex flex-1 content">
+                    <x-reading class="flex-1"/>
+                    <x-quiz class="flex-1" />
+                </div>
+                <div class="flex-1 side">
+                    <x-friends />
+                    <x-notifications />
+                </div>
+            </div>
         </div>
     </div>
 </div>
