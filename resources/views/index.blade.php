@@ -16,9 +16,9 @@
                 <x-info text="Total hours read" number="75.3"/>
             </div>
             <div class="flex main">
-                <div class="flex flex-1 content">
-                    <x-reading class="flex-1"/>
-                    <x-quiz class="flex-1" />
+                <div class="flex-1 content">
+                    <x-reading class=""/>
+                    <x-quiz class="" />
                 </div>
                 <div class="flex-1 side">
                     <x-friends />
