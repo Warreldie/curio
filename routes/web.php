@@ -18,24 +18,17 @@ use App\Http\Controllers\SignInController;
 */
 
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/bookclub', function(){
-    return view('bookclub/index');
-});
-Route::get('/locations', function(){
-    return view('locations/index');
-});
-Route::get('/settings', function(){
-    return view('settings/index');
-});
+Route::get('/', function () {return view('index');});
+Route::get('/bookclub', function(){return view('bookclub/index');});
+Route::get('/locations', function(){return view('locations/index');});
+Route::get('/settings', function(){return view('settings/index');});
 
 Route::get('/users', function(){
     $users = \DB::table("users")->get();
     $data['users'] = $users;
     return view('users/index', $data);
 });
+
 Route::get('/writers', [WriterController::class, 'index']);
 Route::get('/writers/create', [WriterController::class, 'create']);
 Route::post('/writers/store', [WriterController::class, 'store']);
