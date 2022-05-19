@@ -2,8 +2,15 @@
 
 @section('content')
 
-<x-navigation/>
-<x-page-header page="Bookshelf"/>
+<div class="flex">
+    <div class="top-0 left-0">
+        <x-navigation/>
+    </div>
+    <div class="w-full">
+        <x-page-header page="Bookshelf"/>
+    </div>
+</div>
+
 <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
 <div>    
     <livewire:book-search /> 
