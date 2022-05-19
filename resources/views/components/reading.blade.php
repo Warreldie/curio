@@ -1,7 +1,7 @@
 <div class="flex mt-8 ml-2 px-6 py-5 content-center border rounded">
     <div class="flex-1 mr-2">
         <h1 class="font-bold text-3xl">Currently reading</h1>
-        <img class="h-16 mt-2" src="https://edit.org/images/cat/book-covers-big-2019101610.jpg" alt="bookcover">
+        <img class="readingimg mt-2" src="https://edit.org/images/cat/book-covers-big-2019101610.jpg" alt="bookcover">
     </div>
     <div class="flex-auto ml-2 mt-2 ml-2">
         <div class="flex">
