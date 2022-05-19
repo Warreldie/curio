@@ -130,7 +130,7 @@
     @endforeach
         </tbody>
     </table> 
-    
+    <br>
     <nav aria-label="Page navigation example">
         <ul class="inline-flex -space-x-px">
             <li>
