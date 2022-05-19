@@ -9,10 +9,6 @@ class BookSearch extends Component
     public $search;
     public $books = [];
 
-    public function mount(){
-        $this->books = \App\Models\Book::all();
-    }
-
     public function search() {
         $this->books = \App\Models\Book::where('title', 'LIKE', "%{$this->search}%")->get();
     }
