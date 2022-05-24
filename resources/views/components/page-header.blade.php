@@ -1,4 +1,4 @@
-<header class="flex w-max bg-white shadow py-10 px-4">
+<header class="flex w-full bg-white shadow py-10 px-4">
     <div class="flex flex-1">
         <h1 class="mr-2 text-5xl font-bold text-gray-900">{{$page}}</h1>
         <livewire:book-search />      
