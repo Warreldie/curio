@@ -140,11 +140,6 @@
         </div>
         </div>
 </div>
-<<<<<<< HEAD
-</div>
-    </div>
-=======
 
     @endsection
 
->>>>>>> d277ee24829f3ba5af5c797b96a0b24fd755e713
