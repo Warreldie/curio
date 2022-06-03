@@ -2,8 +2,9 @@
 
 @section('content')
 
-<x-navigation/>
-
-<x-page-header page="Bookclub"/>
-
-@endsection
+<div class="flex">
+    <div class="top-0 left-0">
+        <x-navigation/>
+    </div>
+    <div class="w-full">
+        <x-page-header page="Bookclub"/>
