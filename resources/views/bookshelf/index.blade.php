@@ -9,9 +9,7 @@
     <div class="w-full">
         <x-page-header page="Bookshelf"/>
     <div class="mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <div>    
-            <livewire:book-search /> 
-        </div>
+
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-full">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table-auto" style="margin-top: 2rem;">
             <thead class="w-full text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
