@@ -27,6 +27,6 @@
         </span>
         </div>
 
-        <x-button class="mt-2" cta="Continue reading"/>
+        <x-button class="mt-2" cta="Continue reading" c="important"/>
     </div>
 </div>

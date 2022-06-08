@@ -1,10 +1,18 @@
 @use"components/button";
+@use"layouts/forms";
 @use"layouts/navigation";
 @use"layouts/page-header";
+@use"pages/bookclub";
+@use"pages/bookshelf";
 @use"pages/dashboard";
+@use"pages/locations";
+@use"pages/settings";
 $burgundy: #800725;
 $midnight-green: #154B53;
 $viridian: #558B6E;
 $unbleached-silk: #FFD8BE;
 $raisin-black: #1D1E2C;
 $white: #ffffff;
+body {
+    background-color: #f7f7f7;
+}

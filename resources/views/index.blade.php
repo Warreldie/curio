@@ -78,7 +78,7 @@
             <div class="flex main">
                 <div class="flex-1 content">
                     <x-reading class=""/>
-                    <x-quiz class="" />
+                    <x-quiz class=""/>
                 </div>
                 <div class="flex-1 side">
                     <x-friends />
