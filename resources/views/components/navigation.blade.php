@@ -1,4 +1,4 @@
-<nav class="bg-midnight-green text-white pb-96 px-20 max-w-xs max-h-full" >
+<nav class="bg-midnight-green text-white pb-96 px-10 max-w-xs max-h-full" >
     <div class="text-4xl py-10 px-10 logo">
         <svg width="120" height="120" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M53.7095 0H6.29052C2.81636 0 0 2.81636 0 6.29052V53.7095C0 57.1836 2.81636 60 6.29052 60H53.7095C57.1836 60 60 57.1836 60 53.7095V6.29052C60 2.81636 57.1836 0 53.7095 0Z" fill="#154B53"/>
