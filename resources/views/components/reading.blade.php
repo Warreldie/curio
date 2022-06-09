@@ -1,4 +1,4 @@
-<div class="flex mt-8 ml-2 px-6 py-5 content-center border rounded">
+<div class="flex mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
     <div class="flex-1 mr-2">
         <h1 class="font-bold text-3xl">Currently reading</h1>
         <img class="readingimg mt-2" src="https://edit.org/images/cat/book-covers-big-2019101610.jpg" alt="bookcover">

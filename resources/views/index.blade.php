@@ -8,10 +8,10 @@
     </div>
     <div class="w-full">
         <x-page-header page="Dashboard"/>
-        <div>
+        <main>
             <div class="flex info">
-                <div class="flex flex-1 mt-8 ml-2 active px-6 py-5 content-center border rounded">
-                    <div class="flex-auto mx-8">
+                <div class="flex flex-1 mt-8 ml-2 active px-6 py-5 content-center bg-white rounded shadow active">
+                    <div class="flex-1">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#800725"/>
                             <path d="M43 19.1667H21C18.975 19.1667 17.3334 20.8083 17.3334 22.8333V44.8333C17.3334 46.8584 18.975 48.5 21 48.5H43C45.0251 48.5 46.6667 46.8584 46.6667 44.8333V22.8333C46.6667 20.8083 45.0251 19.1667 43 19.1667Z" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -21,13 +21,13 @@
                             <path d="M28.3333 37.5H24.6666V41.1667H28.3333V37.5Z" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="flex-auto ml-2">
+                    <div class="flex-auto">
                         <p>Reveal next event </p>
                         <h1>1 week</h1>
                     </div>
                 </div>
 
-                <div class="flex flex-1 mt-8 ml-2 active px-6 py-5 content-center border rounded">
+                <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
                     <div class="flex-auto mx-8">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#558B6E" fill-opacity="0.2"/>
@@ -45,7 +45,7 @@
                         <h1>3</h1>
                     </div>
                 </div>
-                <div class="flex flex-1 mt-8 ml-2 active px-6 py-5 content-center border rounded">
+                <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
                     <div class="flex-auto mx-8">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#558B6E" fill-opacity="0.2"/>
@@ -61,7 +61,7 @@
                         <h1>4</h1>
                     </div>
                 </div>
-                <div class="flex flex-1 mt-8 ml-2 active px-6 py-5 content-center border rounded">
+                <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
                     <div class="flex-auto mx-8">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#558B6E" fill-opacity="0.2"/>
@@ -85,7 +85,7 @@
                     <x-notifications />
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 </div>
 

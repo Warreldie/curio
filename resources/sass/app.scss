@@ -1,3 +1,9 @@
+$burgundy: #800725;
+$midnight-green: #154B53;
+$viridian: #558B6E;
+$unbleached-silk: #FFD8BE;
+$raisin-black: #1D1E2C;
+$white: #ffffff;
 @use"components/button";
 @use"layouts/forms";
 @use"layouts/navigation";
@@ -7,12 +13,27 @@
 @use"pages/dashboard";
 @use"pages/locations";
 @use"pages/settings";
-$burgundy: #800725;
-$midnight-green: #154B53;
-$viridian: #558B6E;
-$unbleached-silk: #FFD8BE;
-$raisin-black: #1D1E2C;
-$white: #ffffff;
 body {
     background-color: #f7f7f7;
+}
+
+.bgviridian {
+    background-color: #558B6E;
+}
+
+.btnviridian {
+    border-color: #558B6E;
+    color: #558B6E;
+}
+
+main {
+    background-color: #f7f7f7;
+}
+
+.active {
+    border: 1px solid #800725;
+}
+
+.subject {
+    background-color: #f6f6f6;
 }

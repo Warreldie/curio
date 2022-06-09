@@ -1,4 +1,4 @@
-<div class="flex-1 mt-8 ml-2 px-6 py-5 content-center border rounded">
+<div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
     <h1 class="font-bold text-2xl mb-2">Replies</h1>
     <div>
         <div class="flex">
