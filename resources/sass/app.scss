@@ -15,6 +15,17 @@ $white: #ffffff;
 @use"pages/settings";
 body {
     background-color: #f7f7f7;
+    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem !important;
+    */
+}
+
+h1 {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900 !important;
+    font-style: normal;
 }
 
 .bgviridian {
@@ -36,4 +47,9 @@ main {
 
 .subject {
     background-color: #f6f6f6;
+}
+
+.invite {
+    border: 1px solid #800725;
+    color: #800725;
 }

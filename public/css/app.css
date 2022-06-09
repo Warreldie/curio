@@ -16,6 +16,16 @@
 
 body {
   background-color: #f7f7f7;
+  /*
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2rem !important;
+  */
+}
+
+h1 {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900 !important;
+  font-style: normal;
 }
 
 .bgviridian {
@@ -37,6 +47,11 @@ main {
 
 .subject {
   background-color: #f6f6f6;
+}
+
+.invite {
+  border: 1px solid #800725;
+  color: #800725;
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -517,6 +532,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-2 {
   margin-left: 0.5rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -525,12 +546,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-3 {
   margin-top: 0.75rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
