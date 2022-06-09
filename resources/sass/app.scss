@@ -1,55 +1,78 @@
-$burgundy: #800725;
-$midnight-green: #154B53;
-$viridian: #558B6E;
-$unbleached-silk: #FFD8BE;
-$raisin-black: #1D1E2C;
-$white: #ffffff;
-@use"components/button";
-@use"layouts/forms";
-@use"layouts/navigation";
-@use"layouts/page-header";
-@use"pages/bookclub";
-@use"pages/bookshelf";
-@use"pages/dashboard";
-@use"pages/locations";
-@use"pages/settings";
-body {
-    background-color: #f7f7f7;
-    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*
+    $burgundy: #800725;
+    $midnight-green: #154B53;
+    $viridian: #558B6E;
+    $unbleached-silk: #FFD8BE;
+    $raisin-black: #1D1E2C;
+    $white: #ffffff;
+    @use"components/button";
+    @use"layouts/forms";
+    @use"layouts/navigation";
+    @use"layouts/page-header";
+    @use"pages/bookclub";
+    @use"pages/bookshelf";
+    @use"pages/dashboard";
+    @use"pages/locations";
+    @use"pages/settings";
+    body {
+        background-color: #f7f7f7;
+        //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /*
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem !important;
     */
-}
-
-h1 {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 900 !important;
-    font-style: normal;
-}
-
-.bgviridian {
-    background-color: #558B6E;
-}
-
-.btnviridian {
-    border-color: #558B6E;
-    color: #558B6E;
-}
-
-main {
-    background-color: #f7f7f7;
-}
-
-.active {
-    border: 1px solid #800725;
-}
-
-.subject {
-    background-color: #f6f6f6;
-}
-
-.invite {
-    border: 1px solid #800725;
-    color: #800725;
-}
+    }
+    
+    h1 {
+        font-family: sofia-pro, sans-serif;
+        font-weight: 900 !important;
+        font-style: normal;
+    }
+    
+    .bgviridian {
+        background-color: #558B6E;
+    }
+    
+    .btnviridian {
+        border-color: #558B6E;
+        color: #558B6E;
+    }
+    
+    main {
+        background-color: #f7f7f7;
+    }
+    
+    .active {
+        border: 1px solid #800725;
+        font-size: 1.2em;
+    }
+    
+    .active h1 {
+        color: #800725;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1.2em;
+    }
+    
+    .info h1 {
+        font-size: 1.5em;
+    }
+    
+    .subject {
+        background-color: #f6f6f6;
+    }
+    
+    .invite {
+        border: 1px solid #800725;
+        color: #800725;
+    }
+    
+    h2 {
+        font-size: 0.8em;
+    }
+    
+    .reading img {
+        width: 250px;
+        height: auto;
+    }
