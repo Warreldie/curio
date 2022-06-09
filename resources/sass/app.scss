@@ -72,7 +72,31 @@
         font-size: 0.8em;
     }
     
+    h3 {
+        font-size: 1.7em;
+    }
+    
     .reading img {
-        width: 250px;
+        width: 300px;
         height: auto;
+    }
+    
+    .number {
+        color: #800725;
+        font-size: 1.5em;
+        font-weight: 900 !important;
+    }
+    
+    .book {
+        border-right: 1px solid black;
+    }
+    
+    .notifications a {
+        color: #1D1E2C;
+        font-weight: 900 !important;
+    }
+    
+    .notifications span {
+        background-color: #800725;
+        color: white;
     }

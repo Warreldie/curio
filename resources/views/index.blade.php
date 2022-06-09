@@ -79,7 +79,7 @@
                 <div class="flex-1 content">
                 <div class="flex mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow reading">
                     <div class="flex-1 mr-2">
-                        <h1 class="font-bold text-3xl">Currently reading</h1>
+                        <h1 class="font-bold text-3xl mb-2">Currently reading</h1>
                         <img class="readingimg mt-2" src="https://edit.org/images/cat/book-covers-big-2019101610.jpg" alt="bookcover">
                     </div>
                     <div class="flex-2 ml-2 mt-8 ml-2">
@@ -92,28 +92,95 @@
                         </div>
                         <div class="mt-2 mb-2">
                             <p class="mt-2 mb-2">Book progress</p>
-
+                            <span>45%</span>
+                            <span>5 hours to go</span>
                             <p class="mt-2 mb-2">Current chapter</p>
+                            <span>97%</span>
+                            <span>20 minutes to go</span>
                         </div>
                         <div class="flex mt-2 mb-2">
-                        <span class="flex-1 text-center mr-2 mt-2 mb-2">
-                            <p class="mt-2 mb-2 mx-2">5.7</p>
+                        <span class="flex-1 text-center mr-2 mt-2 mb-2 book">
+                            <p class="mt-2 mb-2 mx-2 number">5.7</p>
                             <p class="mt-2 mb-2 mx-2">Hours reading</p>
                         </span>
                         <span class="flex-1 text-center mt-2 mb-2 ml-2">
-                            <p class="mt-2 mb2 mx-2">1.1</p>
+                            <p class="mt-2 mb2 mx-2 number">1.1</p>
                             <p class="mt-2 mb2 mx-2">avg pages/min</p>
                         </span>
                         </div>
 
-                        <x-button class="mt-2" cta="Continue reading" c="important"/>
+                        <div class="mt-8 ml-2 inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bgviridian"> 
+                                <p>Continue Reading</p>
+                            </a>
+                        </div>
+                    </div>
+                </div class="quiz">
+                    <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
+                        <h1 class="font-bold text-2xl mb-2">Who said it?</h1>
+                        <p class="block mt-2 mb-2 text-2xl">“Some people never go crazy. What truly horrible lives they must lead.”</p>
+                        <div class="flex justify-center ml-2">
+                            <div class="mt-8 ml-2 inline-flex rounded-md shadow">
+                                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border text-base font-medium rounded-md btnviridian"> 
+                                    <p>Jane Qustin</p>
+                                </a>
+                            </div>
+                            <div class="mt-8 ml-2 inline-flex rounded-md shadow">
+                                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border text-base font-medium rounded-md btnviridian"> 
+                                    <p>Charlotte Bronte</p>
+                                </a>
+                            </div>
+                            <div class="mt-8 ml-2 inline-flex rounded-md shadow">
+                                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border text-base font-medium rounded-md btnviridian"> 
+                                    <p>Albert Einstein</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    <x-quiz class=""/>
-                </div>
                 <div class="flex-1 side">
-                    <x-friends />
-                    <x-notifications />
+                <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
+                    <h1 class="font-bold text-2xl mb-2">Invite a friend</h1>
+                    <div class="flex ml-2">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">    
+                    </div>
+                    <div class="flex justify-end">
+                        <p class="text-right right mt-2 mb-2 text-2xl">2 invites left.</p>
+                    </div>
+                </div>
+                <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow notifications">
+                    <div class="flex">
+                        <h1 class="font-bold text-2xl mb-2">Replies</h1>
+                        <span>9</span>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
+                        </div>
+                        <div class="flex">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
+                        </div>
+                        <div class="flex">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
+                        </div>
+                        <div class="flex">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
+                        </div>
+                        <div class="flex">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="flex justify-center text-center">Go to discussion board</a>
+                </div>
                 </div>
             </div>
         </main>

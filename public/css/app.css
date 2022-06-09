@@ -72,9 +72,33 @@ h2 {
   font-size: 0.8em;
 }
 
+h3 {
+  font-size: 1.7em;
+}
+
 .reading img {
-  width: 250px;
+  width: 300px;
   height: auto;
+}
+
+.number {
+  color: #800725;
+  font-size: 1.5em;
+  font-weight: 900 !important;
+}
+
+.book {
+  border-right: 1px solid black;
+}
+
+.notifications a {
+  color: #1D1E2C;
+  font-weight: 900 !important;
+}
+
+.notifications span {
+  background-color: #800725;
+  color: white;
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -561,11 +585,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mt-4 {
-  margin-top: 1rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -719,6 +743,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -942,6 +969,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -953,10 +984,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .text-4xl {
   font-size: 2.25rem;
