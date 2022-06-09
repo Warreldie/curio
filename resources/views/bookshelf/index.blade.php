@@ -10,10 +10,10 @@
         <x-page-header page="Bookshelf"/>
     <div class="mx-auto py-10 px-4 sm:px-6 lg:px-8">
 
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-full">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-full bg-white">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 table-auto" style="margin-top: 2rem;">
             <thead class="w-full text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
+                <tr class="text-center">
                     <th scope="col" class="px-6 py-3">
                         Cover
                     </th>
@@ -79,14 +79,14 @@
                     </ul>
                     </td>
                     <td class="px-6 py-4" style="text-align: center;">
-                        <!--<form name="statusShelf" action="test.php" method="post">
+                        <form name="statusShelf" action="test.php" method="post">
                             <select name="status" id="status">
                                 <option value="finished">Finished</option>
                                 <option value="wanttoread">Want to read</option>
                                 <option value="reading">Reading</option>
                             </select>
                             <br><br>
-                        </form>  -->
+                        </form>
                             <!-- Dropdown menu -->
                         <div id="dropdown" class="z-10 hidden bg-black divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
                             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
