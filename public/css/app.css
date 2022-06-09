@@ -10,6 +10,69 @@
   background-color: white;
 }
 
+#addToShelfBtn {
+  float: right !important;
+  border: 2px solid #558B6E;
+  background-color: white;
+  color: #558B6E;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  width: 15%;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900 !important;
+  font-size: 0.9rem !important;
+  text-align: center;
+}
+
+#filterIcon {
+  float: left;
+}
+
+#chevron-down {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#filter {
+  float: left !important;
+  border: 2px none;
+  width: 85%;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900 !important;
+  font-size: 0.9rem !important;
+}
+
+.paddingHead {
+  padding: 1.5rem;
+  display: inline-block;
+  width: 100%;
+}
+
+#statusForm {
+  margin-top: 1rem;
+}
+
+#status {
+  border: 2px solid #558B6E;
+  color: #558B6E;
+  border-radius: 4px;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+thead {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900 !important;
+  font-size: 0.8rem !important;
+  text-transform: capitalize !important;
+}
+
+tr, th {
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-size: 0.9rem !important;
+}
+
 .readingimg {
   height: 20%;
 }
@@ -511,6 +574,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-50 {
   z-index: 50;
 }
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -526,11 +595,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -538,7 +614,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-<<<<<<< HEAD
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -548,22 +623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-3 {
   margin-top: 0.75rem;
 }
-=======
->>>>>>> e132127c6addf15bb4466a55c66782594c80b83a
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.mr-1 {
-  margin-right: 0.25rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
-.mt-4 {
-  margin-top: 1rem;
 }
 .ml-1 {
   margin-left: 0.25rem;
@@ -810,11 +871,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-6 {
   padding: 1.5rem;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .p-2 {
   padding: 0.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .py-12 {
   padding-top: 3rem;
@@ -863,10 +924,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -1033,6 +1090,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .ring-opacity-5 {
   --tw-ring-opacity: 0.05;
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -1203,4 +1263,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2rem;
   }
 }
-

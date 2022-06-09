@@ -1,0 +1,62 @@
+#addToShelfBtn {
+    float: right !important;
+    border: 2px solid #558B6E;
+    background-color: white;
+    color: #558B6E;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    width: 15%;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900 !important;
+    font-size: 0.9rem !important;
+    text-align: center;
+}
+
+#filterIcon {
+    float: left;
+}
+
+#chevron-down {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#filter {
+    float: left !important;
+    border: 2px none;
+    width: 85%;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900 !important;
+    font-size: 0.9rem !important;
+}
+
+.paddingHead {
+    padding: 1.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+#statusForm {
+    margin-top: 1rem;
+}
+
+#status {
+    border: 2px solid #558B6E;
+    color: #558B6E;
+    border-radius: 4px;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+thead {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900 !important;
+    font-size: 0.8rem !important;
+    text-transform: capitalize !important;
+}
+
+tr, th {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-size: 0.9rem !important;
+}
