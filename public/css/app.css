@@ -106,6 +106,7 @@ h1 {
 
 main {
   background-color: #f7f7f7;
+  padding: 1rem;
 }
 
 .active {
@@ -143,9 +144,18 @@ h3 {
   font-size: 1.7em;
 }
 
+.reading {
+  width: 117%;
+}
+
 .reading img {
-  width: 300px;
-  height: auto;
+  width: 95%;
+  height: 350px;
+  margin-top: 2rem;
+}
+
+.currentReading {
+  margin-top: 3.5rem !important;
 }
 
 .number {
@@ -172,10 +182,63 @@ h3 {
   background-color: white;
 }
 
+.container {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
 .progressBar {
   background-color: #558B6E;
   border-radius: 5px;
   text-align: center;
+}
+
+.invitations {
+  width: 75%;
+  position: relative;
+  float: right;
+}
+
+.notifications {
+  display: block;
+  width: 75%;
+  float: right;
+}
+
+.notifications p {
+  font-size: 1rem;
+}
+
+.progressBar {
+  background-color: #558B6E;
+  border-radius: 4px 0px 0px 4px;
+  text-align: center;
+  color: white;
+}
+
+#calendarTitle {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1rem;
+}
+
+.tabs {
+  margin-top: 1rem;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  background: red;
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -730,9 +793,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-1 {
   margin-top: 0.25rem;
 }
-.mt-5 {
-  margin-top: 1.25rem;
-}
 .block {
   display: block;
 }
@@ -972,14 +1032,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-6 {
   padding: 1.5rem;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-1 {
   padding: 0.25rem;
 }
-.p-3 {
-  padding: 0.75rem;
+.p-2 {
+  padding: 0.5rem;
 }
 .py-12 {
   padding-top: 3rem;

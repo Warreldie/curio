@@ -1,112 +1,176 @@
-        $burgundy: #800725;
-        $midnight-green: #154B53;
-        $viridian: #558B6E;
-        $unbleached-silk: #FFD8BE;
-        $raisin-black: #1D1E2C;
-        $white: #ffffff;
-        @use"components/button";
-        @use"layouts/forms";
-        @use"layouts/navigation";
-        @use"layouts/page-header";
-        @use"pages/bookclub";
-        @use"pages/bookshelf";
-        @use"pages/dashboard";
-        @use"pages/locations";
-        @use"pages/settings";
-        body {
-            background-color: #f7f7f7;
-            //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            /*
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.2rem !important;
-    */
-        }
+$burgundy: #800725;
+$midnight-green: #154B53;
+$viridian: #558B6E;
+$unbleached-silk: #FFD8BE;
+$raisin-black: #1D1E2C;
+$white: #ffffff;
+@use"components/button";
+@use"layouts/forms";
+@use"layouts/navigation";
+@use"layouts/page-header";
+@use"pages/bookclub";
+@use"pages/bookshelf";
+@use"pages/dashboard";
+@use"pages/locations";
+@use"pages/settings";
 
-        h1 {
-            font-family: sofia-pro, sans-serif;
-            font-weight: 900 !important;
-            font-style: normal;
-        }
+body {
+    background-color: #f7f7f7;
+    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*
+font-family: 'Libre Baskerville', serif;
+font-size: 1.2rem !important;
+*/
+}
 
-        .bgviridian {
-            background-color: #558B6E;
-        }
+h1 {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 900 !important;
+    font-style: normal;
+}
 
-        .btnviridian {
-            border-color: #558B6E;
-            color: #558B6E;
-        }
+.bgviridian {
+    background-color: #558B6E;
+}
 
-        main {
-            background-color: #f7f7f7;
-        }
+.btnviridian {
+    border-color: #558B6E;
+    color: #558B6E;
+}
 
-        .active {
-            border: 1px solid #800725;
-            font-size: 1.2em;
-        }
+main {
+    background-color: #f7f7f7;
+    padding: 1rem;
+}
 
-        .active h1 {
-            color: #800725;
-            font-size: 1.5em;
-        }
+.active {
+    border: 1px solid #800725;
+    font-size: 1.2em;
+}
 
-        .info {
-            font-size: 1.2em;
-        }
+.active h1 {
+    color: #800725;
+    font-size: 1.5em;
+}
 
-        .info h1 {
-            font-size: 1.5em;
-        }
+.info {
+    font-size: 1.2em;
+}
 
-        .subject {
-            background-color: #f6f6f6;
-        }
+.info h1 {
+    font-size: 1.5em;
+}
 
-        .invite {
-            border: 1px solid #800725;
-            color: #800725;
-        }
+.subject {
+    background-color: #f6f6f6;
+}
 
-        h2 {
-            font-size: 0.8em;
-        }
+.invite {
+    border: 1px solid #800725;
+    color: #800725;
+}
 
-        h3 {
-            font-size: 1.7em;
-        }
+h2 {
+    font-size: 0.8em;
+}
 
-        .reading img {
-            width: 300px;
-            height: auto;
-        }
+h3 {
+    font-size: 1.7em;
+}
 
-        .number {
-            color: #800725;
-            font-size: 1.5em;
-            font-weight: 900 !important;
-        }
+.reading {
+    width: 117%;
+}
 
-        .book {
-            border-right: 1px solid black;
-        }
+.reading img {
+    width: 95%;
+    height: 350px;
+    margin-top: 2rem;
+}
 
-        .notifications a {
-            color: #1D1E2C;
-            font-weight: 900 !important;
-        }
+.currentReading {
+    margin-top: 3.5rem !important;
+}
 
-        .notifications span {
-            background-color: #800725;
-            color: white;
-        }
+.number {
+    color: #800725;
+    font-size: 1.5em;
+    font-weight: 900 !important;
+}
 
-        .location {
-            background-color: white;
-        }
+.book {
+    border-right: 1px solid black;
+}
 
-        .progressBar {
-            background-color: #558B6E;
-            border-radius: 5px;
-            text-align: center;
-        }
+.notifications a {
+    color: #1D1E2C;
+    font-weight: 900 !important;
+}
+
+.notifications span {
+    background-color: #800725;
+    color: white;
+}
+
+.location {
+    background-color: white;
+}
+
+.container {
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+.progressBar {
+    background-color: #558B6E;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.invitations {
+    width: 75%;
+    position: relative;
+    float: right;
+}
+
+.notifications {
+    display: block;
+    width: 75%;
+    float: right;
+}
+
+.notifications p {
+    font-size: 1rem;
+}
+
+.progressBar {
+    background-color: #558B6E;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+    color: white;
+}
+
+#calendarTitle {
+    font-family: sofia-pro, sans-serif;
+    font-size: 1.6rem;
+}
+
+p {
+    font-family: sofia-pro, sans-serif;
+    font-size: 1rem;
+}
+
+.tabs {
+    margin-top: 1rem;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    background: red;
+}
