@@ -102,6 +102,7 @@ h1 {
 
 main {
   background-color: #f7f7f7;
+  padding: 1rem;
 }
 
 .active {
@@ -137,11 +138,21 @@ h2 {
 
 h3 {
   font-size: 1.7em;
+  font-family: sofia-pro, sans-serif;
+}
+
+.reading {
+  width: 117%;
 }
 
 .reading img {
-  width: 300px;
-  height: auto;
+  width: 95%;
+  height: 350px;
+  margin-top: 2rem;
+}
+
+.currentReading {
+  margin-top: 3.5rem !important;
 }
 
 .number {
@@ -154,9 +165,25 @@ h3 {
   border-right: 1px solid black;
 }
 
+.invitations {
+  width: 75%;
+  position: relative;
+  float: right;
+}
+
+.notifications {
+  display: block;
+  width: 75%;
+  float: right;
+}
+
 .notifications a {
   color: #1D1E2C;
   font-weight: 900 !important;
+}
+
+.notifications p {
+  font-size: 1rem;
 }
 
 .notifications span {
@@ -164,10 +191,41 @@ h3 {
   color: white;
 }
 
+.container {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
 .progressBar {
   background-color: #558B6E;
-  border-radius: 5px;
+  border-radius: 4px 0px 0px 4px;
   text-align: center;
+  color: white;
+}
+
+#calendarTitle {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1rem;
+}
+
+.tabs {
+  margin-top: 1rem;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  background: red;
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -595,6 +653,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -680,6 +771,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
 }
 .block {
   display: block;
@@ -925,6 +1019,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-1 {
   padding: 0.25rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .py-12 {
   padding-top: 3rem;
