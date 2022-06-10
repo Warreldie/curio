@@ -87,14 +87,14 @@
                     <div class="flex-2 ml-2 mt-8 ml-2 currentReading">
                         <div class="flex">
                             <div class="flex-1">
-                                <h2 class="font-serif font-bold text-3xl mt-2">Wuthering Heights</h2>
+                                <h2 class="font-serif font-bold text-3xl mt-2 bookTitle">Wuthering Heights</h2>
                                 <h3>Emily Bronté</h3>
                             </div>
                             <p class="flex-2 right mt-4 ml-2">Rating: 4.5</p>
                         </div>
                         <div class="mt-2 mb-2">
                             <p class="mt-2 mb-2">Book progress</p>
-                            <div class="container"><div class="progressBar" style="width:45%">45%%</div></div>
+                            <div class="container"><div class="progressBar" style="width:45%">45%</div></div>
                             <span>5 hours to go</span>
                             <p class="mt-2 mb-2">Current chapter</p>
                             <div class="container"><div class="progressBar" style="width:97%">97%</div></div>
@@ -117,14 +117,14 @@
                             </a>
                         </div>
                     </div>
-                </div class="quiz">
-                    <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow">
+                </div>
+                    <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow quiz">
                         <h1 class="font-bold text-2xl mb-2">Who said it?</h1>
                         <p class="block mt-2 mb-2 text-2xl">“Some people never go crazy. What truly horrible lives they must lead.”</p>
-                        <div class="flex justify-center ml-2">
+                        <div class="flex justify-start ml-2">
                             <div class="mt-8 ml-2 inline-flex rounded-md shadow">
                                 <a href="#" class="inline-flex items-center justify-center px-5 py-3 border text-base font-medium rounded-md btnviridian"> 
-                                    <p>Jane Qustin</p>
+                                    <p>Jane Austin</p>
                                 </a>
                             </div>
                             <div class="mt-8 ml-2 inline-flex rounded-md shadow">

@@ -27,6 +27,7 @@ h1 {
     font-family: sofia-pro, sans-serif;
     font-weight: 900 !important;
     font-style: normal;
+    font-size: 1.4rem;
 }
 
 .bgviridian {
@@ -44,7 +45,7 @@ main {
 }
 
 .active {
-    border: 1px solid #800725;
+    border: 1px solid $burgundy;
     font-size: 1.2em;
 }
 
@@ -80,16 +81,23 @@ h3 {
 
 .reading {
     width: 117%;
+    h1 {
+        font-size: 1.6rem;
+    }
 }
 
 .reading img {
-    width: 95%;
-    height: 350px;
+    width: 100%;
+    height: auto;
     margin-top: 2rem;
 }
 
 .currentReading {
     margin-top: 3.5rem !important;
+    width: 63%;
+    .bookTitle {
+        font-size: 1.5rem;
+    }
 }
 
 .number {
@@ -105,11 +113,10 @@ h3 {
 .notifications a {
     color: #1D1E2C;
     font-weight: 900 !important;
-}
-
-.notifications span {
-    background-color: #800725;
-    color: white;
+    span {
+        background-color: #800725;
+        color: white;
+    }
 }
 
 .location {
@@ -121,11 +128,6 @@ h3 {
     border-radius: 4px;
 }
 
-.progressBar {
-    background-color: #558B6E;
-    border-radius: 5px;
-    text-align: center;
-}
 
 .invitations {
     width: 75%;
@@ -137,10 +139,9 @@ h3 {
     display: block;
     width: 75%;
     float: right;
-}
-
-.notifications p {
-    font-size: 1rem;
+    p {
+        font-size: 1rem;
+    }
 }
 
 .progressBar {
@@ -173,4 +174,12 @@ p {
     color: #fff;
     text-align: center;
     background: red;
+}
+
+.quiz {
+    width: 117%;
+    p {
+        font-family: sofia-pro, sans-serif;
+        font-size: 1rem;
+    }
 }

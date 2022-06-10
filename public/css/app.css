@@ -93,6 +93,7 @@ h1 {
   font-family: sofia-pro, sans-serif;
   font-weight: 900 !important;
   font-style: normal;
+  font-size: 1.4rem;
 }
 
 .bgviridian {
@@ -147,15 +148,22 @@ h3 {
 .reading {
   width: 117%;
 }
+.reading h1 {
+  font-size: 1.6rem;
+}
 
 .reading img {
-  width: 95%;
-  height: 350px;
+  width: 100%;
+  height: auto;
   margin-top: 2rem;
 }
 
 .currentReading {
   margin-top: 3.5rem !important;
+  width: 63%;
+}
+.currentReading .bookTitle {
+  font-size: 1.5rem;
 }
 
 .number {
@@ -172,8 +180,7 @@ h3 {
   color: #1D1E2C;
   font-weight: 900 !important;
 }
-
-.notifications span {
+.notifications a span {
   background-color: #800725;
   color: white;
 }
@@ -187,12 +194,6 @@ h3 {
   border-radius: 4px;
 }
 
-.progressBar {
-  background-color: #558B6E;
-  border-radius: 5px;
-  text-align: center;
-}
-
 .invitations {
   width: 75%;
   position: relative;
@@ -204,7 +205,6 @@ h3 {
   width: 75%;
   float: right;
 }
-
 .notifications p {
   font-size: 1rem;
 }
@@ -239,6 +239,14 @@ p {
   color: #fff;
   text-align: center;
   background: red;
+}
+
+.quiz {
+  width: 117%;
+}
+.quiz p {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1rem;
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -927,6 +935,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-end {
   justify-content: flex-end;
