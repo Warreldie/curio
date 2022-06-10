@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Hotfix for MariaDB seeders
+        Schema::defaultStringLength(191);
     }
 }
