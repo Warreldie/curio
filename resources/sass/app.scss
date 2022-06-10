@@ -1,166 +1,22 @@
-    $burgundy: #800725;
-    $midnight-green: #154B53;
-    $viridian: #558B6E;
-    $unbleached-silk: #FFD8BE;
-    $raisin-black: #1D1E2C;
-    $white: #ffffff;
-    @use"components/button";
-    @use"layouts/forms";
-    @use"layouts/navigation";
-    @use"layouts/page-header";
-    @use"pages/bookclub";
-    @use"pages/bookshelf";
-    @use"pages/dashboard";
-    @use"pages/locations";
-    @use"pages/settings";
-    body {
-        background-color: #f7f7f7;
-        //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        /*
+        $burgundy: #800725;
+        $midnight-green: #154B53;
+        $viridian: #558B6E;
+        $unbleached-silk: #FFD8BE;
+        $raisin-black: #1D1E2C;
+        $white: #ffffff;
+        @use"components/button";
+        @use"layouts/forms";
+        @use"layouts/navigation";
+        @use"layouts/page-header";
+        @use"pages/bookclub";
+        @use"pages/bookshelf";
+        @use"pages/dashboard";
+        @use"pages/locations";
+        @use"pages/settings";
+        body {
+            background-color: #f7f7f7;
+            //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /*
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem !important;
     */
-    }
-    
-    h1 {
-        font-family: sofia-pro, sans-serif;
-        font-weight: 900 !important;
-        font-style: normal;
-    }
-    
-    .bgviridian {
-        background-color: #558B6E;
-    }
-    
-    .btnviridian {
-        border-color: #558B6E;
-        color: #558B6E;
-    }
-    
-    main {
-        background-color: #f7f7f7;
-        padding: 1rem;
-    }
-    
-    .active {
-        border: 1px solid #800725;
-        font-size: 1.2em;
-    }
-    
-    .active h1 {
-        color: #800725;
-        font-size: 1.5em;
-    }
-    
-    .info {
-        font-size: 1.2em;
-    }
-    
-    .info h1 {
-        font-size: 1.5em;
-    }
-    
-    .subject {
-        background-color: #f6f6f6;
-    }
-    
-    .invite {
-        border: 1px solid #800725;
-        color: #800725;
-    }
-    
-    h2 {
-        font-size: 0.8em;
-    }
-    
-    h3 {
-        font-size: 1.7em;
-        font-family: sofia-pro, sans-serif;
-    }
-    
-    .reading {
-        width: 117%;
-    }
-
-    .reading img {
-        width: 95%;
-        height: 350px;
-        margin-top: 2rem;
-    }
-
-    .currentReading {
-        margin-top: 3.5rem !important;
-    }
-    
-    .number {
-        color: #800725;
-        font-size: 1.5em;
-        font-weight: 900 !important;
-    }
-    
-    .book {
-        border-right: 1px solid black;
-    }
-
-    .invitations {
-        width: 75%;
-        position: relative;
-        float: right;
-    }
-    
-    .notifications {
-        display: block;
-        width: 75%;
-        float: right;
-    }
-
-    .notifications a {
-        color: #1D1E2C;
-        font-weight: 900 !important;
-    }
-    
-    .notifications p {
-        font-size: 1rem;
-    }
-    
-    .notifications span {
-        background-color: #800725;
-        color: white;
-    }
-
-    .container {
-        background-color: lightgray;
-        border-radius: 4px;
-    }
-
-    .progressBar {
-        background-color: #558B6E;
-        border-radius: 4px  0px 0px 4px;
-        text-align: center;
-        color: white;
-    }
-
-    #calendarTitle {
-        font-family: sofia-pro, sans-serif;
-        font-size: 1.6rem;
-    }
-
-    p {
-        font-family: sofia-pro, sans-serif;
-        font-size: 1rem;
-    }
-
-    .tabs {
-        margin-top: 1rem;
-    }
-
-    .circle {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        border-radius: 50%;
-        font-size: 0.9rem;
-        color: #fff;
-        text-align: center;
-        background: red
-    }
