@@ -183,3 +183,27 @@ p {
         font-size: 1rem;
     }
 }
+
+/* Settings */ 
+.settingsBox {
+    width: 100%;
+}
+
+.settingsPage {
+    h1{
+        font-size: 1.2rem;
+        color: $midnight-green;
+    }
+    .profileImg {
+        width: 35%;
+    }
+    #profileImgBox {
+        justify-content: center;
+        width: 65%;
+        float: left;
+    }
+}
+
+.containerSettingsBox {
+    width: 80%;
+}

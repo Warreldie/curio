@@ -248,6 +248,28 @@ p {
   font-family: sofia-pro, sans-serif;
   font-size: 1rem;
 }
+
+/* Settings */
+.settingsBox {
+  width: 100%;
+}
+
+.settingsPage h1 {
+  font-size: 1.2rem;
+  color: #154B53;
+}
+.settingsPage .profileImg {
+  width: 35%;
+}
+.settingsPage #profileImgBox {
+  justify-content: center;
+  width: 65%;
+  float: left;
+}
+
+.containerSettingsBox {
+  width: 80%;
+}
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 *//*
@@ -798,6 +820,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mr-2 {
   margin-right: -0.5rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1101,6 +1126,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -1122,9 +1151,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pr-4 {
   padding-right: 1rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1136,6 +1162,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .text-left {
   text-align: left;
