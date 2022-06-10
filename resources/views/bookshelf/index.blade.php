@@ -13,19 +13,20 @@
 
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-full bg-white">
             <div class="paddingHead">
-                <!-- add filter icon + dropdown -->
+                <!-- add dropdown -->
                 <div id="filter">
                     <div id="filterIcon">
                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.1875 5.625H20.8125C20.9745 5.68182 21.1214 5.77497 21.2418 5.89732C21.3623 6.01967 21.4532 6.16796 21.5075 6.33085C21.5617 6.49373 21.578 6.66688 21.5551 6.83704C21.5321 7.00719 21.4705 7.16983 21.375 7.3125L15.75 13.5V21.375L11.25 18V13.5L5.625 7.3125C5.52948 7.16983 5.46788 7.00719 5.44492 6.83704C5.42196 6.66688 5.43825 6.49373 5.49255 6.33085C5.54684 6.16796 5.6377 6.01967 5.75816 5.89732C5.87861 5.77497 6.02548 5.68182 6.1875 5.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <button style="font-size:16px">   &nbsp;&nbsp;All</button>
+                    <button style="font-size:16px">   &nbsp;&nbsp;All
                     <div id="chevron-down">
                         <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.25 10.625L13.5 17.375L6.75 10.625" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
+                    </button>
                 </div>
 
                 <div id="addToShelfBtn">
@@ -129,7 +130,7 @@
                         </div> 
                     </td>
                     <td class="px-6 py-4" style="text-align: center;">
-                        Date
+                        <div><p id="dateStatus">Date</p></div>
                     </td>
                     <td class="px-6 py-4 text-right">
                         <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline float-left">

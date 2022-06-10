@@ -75,10 +75,13 @@ tr, th {
 
 .readingimg {
   height: 20%;
+<<<<<<< HEAD
 }
 
 .location {
   background-color: white;
+=======
+>>>>>>> 5ca62134ae7aa888ac20c81d71c1fe5c0915a438
 }
 
 body {
@@ -168,8 +171,15 @@ h3 {
   color: white;
 }
 
+<<<<<<< HEAD
 .location {
   background-color: white;
+=======
+.progressBar {
+  background-color: #558B6E;
+  border-radius: 5px;
+  text-align: center;
+>>>>>>> 5ca62134ae7aa888ac20c81d71c1fe5c0915a438
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
@@ -649,6 +659,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+<<<<<<< HEAD
 }
 .mx-6 {
   margin-left: 1.5rem;
@@ -657,6 +668,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+=======
+>>>>>>> 5ca62134ae7aa888ac20c81d71c1fe5c0915a438
 }
 .mt-8 {
   margin-top: 2rem;
