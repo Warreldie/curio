@@ -19413,12 +19413,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected \"}\".\n   ╷\n22 │     */\r\n   │       ^\n   ╵\n  resources/sass/app.scss 22:7  root stylesheet\n    at processResult (/application/node_modules/webpack/lib/NormalModule.js:753:19)\n    at /application/node_modules/webpack/lib/NormalModule.js:855:5\n    at /application/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /application/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/application/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/application/node_modules/sass-loader/dist/index.js:69:5)");
 
 /***/ }),
 
