@@ -87,6 +87,7 @@
                             <div class="flex-1">
                                 <h2 class="font-serif font-bold text-3xl mt-2">Wuthering Heights</h2>
                                 <h3>Emily Bronté</h3>
+                                <div class="progressBar" style="width:50%">50%</div>
                             </div>
                             <p class="flex-2 right mt-4 ml-2">Rating: 4.5</p>
                         </div>
