@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div class="flex">
     <div class="top-0 left-0">
         <x-navigation/>
@@ -25,6 +26,9 @@
                         <a href="#">
                             <p>Reveal next event</p>
                             <h1 id="calendarTitle">1 WEEK</h1>
+                            <h1 class="">
+                                {{$user}}
+                            </h1> 
                         </a>
                         </div>
                 </div>

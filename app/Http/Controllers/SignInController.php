@@ -19,7 +19,9 @@ class SignInController extends Controller
             return redirect('../');
         }
         else{
-            echo "Login Failed";
+            $error = "Login Failed";
+            $data['errors'] = $error;
+            return view('signin/index', $data);
         }
     }
 }

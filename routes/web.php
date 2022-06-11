@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\WriterController;
 use App\Http\Controllers\SignUpController;
@@ -18,7 +19,7 @@ use App\Http\Controllers\SignInController;
 */
 
 
-Route::get('/', function () {return view('index');});
+Route::get('/{id}', [Controller::class, 'index']);
 Route::get('/bookclub', function(){return view('bookclub/index');});
 Route::get('/locations', function(){return view('locations/index');});
 Route::get('/settings', function(){return view('settings/index');});

@@ -2,12 +2,11 @@
 
 @section('content')
 
-@if( $errors-> any() )
-      @component('components/alert')
-          @slot('title') Error @endslot
-          @slot('message') {{$errors}} @endslot
-      @endcomponent
- @endif
+@component('components/alert')
+  @slot('title') Error @endslot
+  @slot('message') {{$errors}} @endslot
+@endcomponent
+
 <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full space-y-8">
 
@@ -28,7 +27,7 @@
           <input id="password" name="password" type="password" autocomplete="current-password" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm" placeholder="Password">
         </div>
       </div>
-
+      <a class="flex justify-center mt-2" href="/signup">or Sign Up</a>
       <div>
         <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-midnight-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           </span>
