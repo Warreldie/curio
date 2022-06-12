@@ -26,9 +26,4 @@ class BookController extends Controller
         $book->save();
         return redirect('books/');
     }
-    public function bookshelf(){
-        $books = \DB::table('books')->paginate(5);
-        $data['books'] = $books;
-        return view('bookshelf/index', $data);
-    }
 }

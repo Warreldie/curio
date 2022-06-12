@@ -6,6 +6,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\WriterController;
 use App\Http\Controllers\SignUpController;
 use App\Http\Controllers\SignInController;
+use App\Http\Controllers\SignOutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +19,11 @@ use App\Http\Controllers\SignInController;
 |
 */
 
-
-Route::get('/{id}', [Controller::class, 'index']);
-Route::get('/bookclub', function(){return view('bookclub/index');});
-Route::get('/locations', function(){return view('locations/index');});
-Route::get('/settings', function(){return view('settings/index');});
+Route::get('/', [Controller::class, 'index']);
+Route::get('/bookclub', [Controller::class, 'bookclub']);
+Route::get('/bookshelf', [Controller::class, 'bookshelf']);
+Route::get('/locations', [Controller::class,'locations']);
+Route::get('/settings', [Controller::class,'settings']);
 
 Route::get('/users', function(){
     $users = \DB::table("users")->get();
@@ -36,7 +37,6 @@ Route::post('/writers/store', [WriterController::class, 'store']);
 Route::get('/writers/{writer}', [WriterController::class, 'details']);
 
 Route::get('/books', [BookController::class, 'index']);
-Route::get('/bookshelf', [BookController::class, 'bookshelf']);
 Route::get('/books/create', [BookController::class, 'create']);
 Route::post('/books/store', [BookController::class, 'store']);
 Route::get('/books/{book}', [BookController::class, 'details']);
@@ -46,6 +46,9 @@ Route::post('/signup/store', [SignUpController::class, 'store']);
 
 Route::get('/signin', [SignInController::class, 'signin']);
 Route::post('/signin/try', [SignInController::class, 'try']);
+
+Route::get('/signout', [SignOutController::class, 'signout']);
+
 
 /*
     $data['books']=[
