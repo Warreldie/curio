@@ -13,7 +13,6 @@ $white: #ffffff;
 @use"pages/dashboard";
 @use"pages/locations";
 @use"pages/settings";
-
 body {
     background-color: #f7f7f7;
     //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -128,7 +127,6 @@ h3 {
     border-radius: 4px;
 }
 
-
 .invitations {
     width: 75%;
     position: relative;
@@ -184,13 +182,15 @@ p {
     }
 }
 
-/* Settings */ 
+
+/* Settings */
+
 .settingsBox {
     width: 100%;
 }
 
 .settingsPage {
-    h1{
+    h1 {
         font-size: 1.2rem;
         color: $midnight-green;
     }
@@ -206,4 +206,9 @@ p {
 
 .containerSettingsBox {
     width: 80%;
+}
+
+.map {
+    border: #800725 1px solid;
+    padding: 500px;
 }

@@ -6,7 +6,7 @@
         <path d="M18.5 36C8.83502 36 1 28.165 1 18.5H-1C-1 29.2696 7.73045 38 18.5 38V36ZM36 18.5C36 28.165 28.165 36 18.5 36V38C29.2696 38 38 29.2696 38 18.5H36ZM18.5 1C28.165 1 36 8.83502 36 18.5H38C38 7.73045 29.2696 -1 18.5 -1V1ZM18.5 -1C7.73045 -1 -1 7.73045 -1 18.5H1C1 8.83502 8.83502 1 18.5 1V-1Z" fill="#558B6E"/>
         </svg>
     </div>
-    <input wire:keyup="search" wire:model="search" id="search" name="search" type="text" autocomplete="search" class="w-5 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md" placeholder="Search">
+    <input wire:keyup="search" wire:model="search" id="search" name="search" type="text" autocomplete="search" class="w-max py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md" placeholder="Search">
     @if($search)
         <h2>Searching for: <em>{{ $search }}</em></h2>
     @endif
