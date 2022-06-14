@@ -14,7 +14,7 @@
         </div>
         <div class="flex-1 absolute right-0 px-1 flex flex-row">
             <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            <h2 class="m-2 p-2">Hi, {{$users->name}}!</h2>
+            <h2 class="m-2 p-2">Hi, {{$user->name}}!</h2>
 
             <button type="button" class="m-2 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                 <!-- Heroicon name: outline/bell -->
@@ -206,8 +206,9 @@
                         </div>
                     </div>
                 <ul class="mt-8">
+                    @foreach($users as $user)
                     <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
+                        <p class="flex-1">{{ $user->name }}</p>
                         <div class="flex-3 flex">
                             <a href="#" class="mx-2">
                             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,122 +226,8 @@
                             </a>
                         </div>
                     </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="flex" class="my-2 mx-2">
-                        <p class="flex-1">Name</p>
-                        <div class="flex-3 flex">
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                            <a href="#" class="mx-2">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5 12.375C15.9853 12.375 18 10.3603 18 7.875C18 5.38972 15.9853 3.375 13.5 3.375C11.0147 3.375 9 5.38972 9 7.875C9 10.3603 11.0147 12.375 13.5 12.375Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.75 23.625V21.375C6.75 20.1815 7.22411 19.0369 8.06802 18.193C8.91193 17.3491 10.0565 16.875 11.25 16.875H15.75C16.9435 16.875 18.0881 17.3491 18.932 18.193C19.7759 19.0369 20.25 20.1815 20.25 21.375V23.625" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </a>
-                        </div>
-                    </li>
+                    @endforeach
                 </ul>
-                </div>
             </div>
         </div>
     </div>
