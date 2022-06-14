@@ -14,7 +14,7 @@
             <livewire:book-search />      
         </div>
         <div class="flex-1 absolute right-0 px-1 flex flex-row">
-            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://picsum.photos/id/999/200" alt="">
             <h2 class="m-2 p-2">Hi, {{$user->name}}!</h2>
 
             <button type="button" class="m-2 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -185,11 +185,9 @@
                 <div class="flex-1 mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow invitations">
                     <h1 class="font-bold text-2xl mb-2">Invite a friend</h1>
                     <div class="flex ml-2">
-                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">    
+                    @foreach($users as $user)
+                    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://picsum.photos/id/{{999 + $user->id}}/200"" alt="">
+                    @endforeach
                     </div>
                     <div class="flex justify-end">
                         <p class="text-right right mt-2 mb-2 text-2xl">2 invites left.</p>
@@ -201,26 +199,12 @@
                         <div class="circle">9</div>
                     </div>
                     <div>
-                        <div class="flex">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
-                        </div>
-                        <div class="flex">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
-                        </div>
-                        <div class="flex">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
-                        </div>
-                        <div class="flex">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
-                        </div>
-                        <div class="flex">
-                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                            <p class="right mt-2 mb-2 text-2xl">Username Replied to your comment.</p>
-                        </div>
+                    @foreach($users as $user)
+                    <div class="flex">
+                        <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white mt-2 mb-2 mr-2 ml-2" src="https://picsum.photos/id/{{1019 + $user->id}}/200" alt="">
+                        <p class="right mt-2 mb-2 text-2xl">{{ $user->name }}</p>
+                    </div>
+                    @endforeach
                     </div>
                     <a href="#" class="flex justify-center text-center">Go to discussion board</a>
                 </div>
