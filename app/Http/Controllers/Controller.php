@@ -15,7 +15,11 @@ class Controller extends BaseController
             // The user is logged in...
             $id = Auth::id();
             $user = \DB::table("users")->where("id", $id)->first();
-            $data['users'] = $user;
+            $book = \DB::table("books")->where("id", 1)->first();
+            $writer = \DB::table("writers")->where("id", $book->writer_id)->first();
+            $data['book'] = $book; 
+            $data['user'] = $user;
+            $data['writer'] = $writer;
             return view('/index', $data);
         }else{
             return view('/signin/index');

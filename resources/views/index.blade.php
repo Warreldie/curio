@@ -15,7 +15,7 @@
         </div>
         <div class="flex-1 absolute right-0 px-1 flex flex-row">
             <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            <h2 class="m-2 p-2">Hi, {{$users->name}}!</h2>
+            <h2 class="m-2 p-2">Hi, {{$user->name}}!</h2>
 
             <button type="button" class="m-2 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                 <!-- Heroicon name: outline/bell -->
@@ -121,13 +121,15 @@
                 <div class="flex mt-8 ml-2 px-6 py-5 content-center bg-white rounded shadow reading">
                     <div class="flex-1 mr-2">
                         <h1 class="font-bold text-3xl mb-2">Currently reading</h1>
-                        <img class="readingimg mt-2" src="https://edit.org/images/cat/book-covers-big-2019101610.jpg" alt="bookcover">
+                        <img class="readingimg mt-2" src="{{ $book->image }}" alt="bookcover">
                     </div>
                     <div class="flex-2 ml-2 mt-8 ml-2 currentReading">
                         <div class="flex">
                             <div class="flex-1">
-                                <h2 class="font-serif font-bold text-3xl mt-2 bookTitle">Wuthering Heights</h2>
-                                <h3>Emily Bronté</h3>
+ 
+                                <h2 class="font-serif font-bold text-3xl mt-2 bookTitle">{{ $book->title }}</h2>
+
+                                <h3>{{ $writer->name }}</h3>
                             </div>
                             <p class="flex-2 right mt-4 ml-2">Rating: 4.5</p>
                         </div>
