@@ -15,10 +15,12 @@ class Controller extends BaseController
             // The user is logged in...
             $id = Auth::id();
             $user = \DB::table("users")->where("id", $id)->first();
+            $users = \DB::table("users")->take(10)->get();
             $book = \DB::table("books")->where("id", 1)->first();
             $writer = \DB::table("writers")->where("id", $book->writer_id)->first();
             $data['book'] = $book; 
             $data['user'] = $user;
+            $data['users'] = $users;
             $data['writer'] = $writer;
             return view('/index', $data);
         }else{

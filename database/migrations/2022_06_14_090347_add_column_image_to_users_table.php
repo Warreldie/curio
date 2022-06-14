@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('books', function (Blueprint $table) {
-            $table->text('bio')->change();
+        Schema::table('users', function (Blueprint $table) {
+            $table->text('image');
         });
     }
 
@@ -25,8 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('books', function (Blueprint $table) {
-            $table->string('bio')->change();
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('image');
         });
     }
 };
