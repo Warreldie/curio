@@ -33,8 +33,10 @@ class Controller extends BaseController
             $id = Auth::id();
             $user = \DB::table("users")->where("id", $id)->first();
             $users = \DB::table("users")->take(15)->get();
+            $books = \DB::table("books")->take(3)->get();
             $data['users'] = $users;
             $data['user'] = $user;
+            $data['books'] = $books;
             return view('bookclub/index', $data);
         }else{
             return view('/signin/index');

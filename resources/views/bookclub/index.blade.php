@@ -80,12 +80,13 @@
                             <p>Add</p>    
                         </div>
                     </div>
+                    @foreach($books as $book)
                     <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center rounded shadow subject">
-                        <img class="flex-auto mx-2 mt-4 block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <img class="flex-auto mx-2 mt-4 block h-12 w-12 rounded-full ring-2 ring-white" src="https://picsum.photos/id/{{1079 + $book->id}}/200" alt="">
                         <div class="flex-auto mx-2">
-                            <h1 class="mt-2 mb-2">What's up with the Bronté sisters?</h1>
-                            <p class="mt-2 mb-2">Username</p>
-                            <p class="mb-2 mt-2">He share of first to worse. Weddings and any opinions suitable smallest nay. My he houses or months settle remove ladies appear.</p>
+                            <h1 class="mt-2 mb-2">{{$book->title}}</h1>
+                            <p class="mt-2 mb-2">{{$book->author}}</p>
+                            <p class="mb-2 mt-2">{{$book->bio}}</p>
                             <div class="flex justify-center mt-2">
                                 <div class="flex mt-2 mx-2">
                                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,66 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center rounded shadow subject">
-                        <img class="flex-auto mx-2 mt-4 block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                        <div class="flex-auto mx-2">
-                            <h1 class="mt-2 mb-2">What's up with the Bronté sisters?</h1>
-                            <p class="mt-2 mb-2">Username</p>
-                            <p class="mb-2 mt-2">He share of first to worse. Weddings and any opinions suitable smallest nay. My he houses or months settle remove ladies appear.</p>
-                            <div class="flex justify-center mt-2">
-                                <div class="flex mt-2 mx-2">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <p>
-                                        12 anwsers
-                                    </p>
-                                </div>
-                                <div class="flex mt-2 mx-2">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 22.5001H9L20.8125 10.6876C21.4092 10.0909 21.7445 9.28151 21.7445 8.4376C21.7445 7.59368 21.4092 6.78433 20.8125 6.1876C20.2158 5.59086 19.4064 5.25562 18.5625 5.25562C17.7186 5.25562 16.9092 5.59086 16.3125 6.1876L4.5 18.0001V22.5001Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15.1875 7.3125L19.6875 11.8125" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <p>
-                                        Leave a message
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-1 mt-8 ml-2 px-6 py-5 content-center rounded shadow subject">
-                        <img class="flex-auto mx-2 mt-4 block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                        <div class="flex-auto mx-2">
-                            <h1 class="mt-2 mb-2">What's up with the Bronté sisters?</h1>
-                            <p class="mt-2 mb-2">Username</p>
-                            <p class="mb-2 mt-2">He share of first to worse. Weddings and any opinions suitable smallest nay. My he houses or months settle remove ladies appear.</p>
-                            <div class="flex justify-center mt-2">
-                                <div class="flex mt-2 mx-2">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 23.625V9C4.5 8.10489 4.85558 7.24645 5.48851 6.61351C6.12145 5.98058 6.97989 5.625 7.875 5.625H19.125C20.0201 5.625 20.8786 5.98058 21.5115 6.61351C22.1444 7.24645 22.5 8.10489 22.5 9V15.75C22.5 16.6451 22.1444 17.5036 21.5115 18.1365C20.8786 18.7694 20.0201 19.125 19.125 19.125H9L4.5 23.625Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.5 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M18 12.375V12.3862" stroke="#242124" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <p>
-                                        12 anwsers
-                                    </p>
-                                </div>
-                                <div class="flex mt-2 mx-2">
-                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.5 22.5001H9L20.8125 10.6876C21.4092 10.0909 21.7445 9.28151 21.7445 8.4376C21.7445 7.59368 21.4092 6.78433 20.8125 6.1876C20.2158 5.59086 19.4064 5.25562 18.5625 5.25562C17.7186 5.25562 16.9092 5.59086 16.3125 6.1876L4.5 18.0001V22.5001Z" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15.1875 7.3125L19.6875 11.8125" stroke="#242124" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <p>
-                                        Leave a message
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="flex-1 side">
