@@ -1,214 +1,219 @@
-$burgundy: #800725;
-$midnight-green: #154B53;
-$viridian: #558B6E;
-$unbleached-silk: #FFD8BE;
-$raisin-black: #1D1E2C;
-$white: #ffffff;
-@use"components/button";
-@use"layouts/forms";
-@use"layouts/navigation";
-@use"layouts/page-header";
-@use"pages/bookclub";
-@use"pages/bookshelf";
-@use"pages/dashboard";
-@use"pages/locations";
-@use"pages/settings";
-body {
-    background-color: #f7f7f7;
-    //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*
+    $burgundy: #800725;
+    $midnight-green: #154B53;
+    $viridian: #558B6E;
+    $unbleached-silk: #FFD8BE;
+    $raisin-black: #1D1E2C;
+    $white: #ffffff;
+    @use"components/button";
+    @use"layouts/forms";
+    @use"layouts/navigation";
+    @use"layouts/page-header";
+    @use"pages/bookclub";
+    @use"pages/bookshelf";
+    @use"pages/dashboard";
+    @use"pages/locations";
+    @use"pages/settings";
+    body {
+        background-color: #f7f7f7;
+        //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /*
 font-family: 'Libre Baskerville', serif;
 font-size: 1.2rem !important;
 */
-}
-
-h1 {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 900 !important;
-    font-style: normal;
-    font-size: 1.4rem;
-}
-
-.bgviridian {
-    background-color: #558B6E;
-}
-
-.btnviridian {
-    border-color: #558B6E;
-    color: #558B6E;
-}
-
-main {
-    background-color: #f7f7f7;
-    padding: 1rem;
-}
-
-.active {
-    border: 1px solid $burgundy;
-    font-size: 1.2em;
-}
-
-.active h1 {
-    color: #800725;
-    font-size: 1.5em;
-}
-
-.info {
-    font-size: 1.2em;
-}
-
-.info h1 {
-    font-size: 1.5em;
-}
-
-.subject {
-    background-color: #f6f6f6;
-}
-
-.invite {
-    border: 1px solid #800725;
-    color: #800725;
-}
-
-h2 {
-    font-size: 0.8em;
-}
-
-h3 {
-    font-size: 1.7em;
-}
-
-.reading {
-    width: 117%;
+    }
+    
     h1 {
-        font-size: 1.6rem;
+        font-family: sofia-pro, sans-serif;
+        font-weight: 900 !important;
+        font-style: normal;
+        font-size: 1.4rem;
     }
-}
-
-.reading img {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-}
-
-.currentReading {
-    margin-top: 3.5rem !important;
-    width: 63%;
-    .bookTitle {
-        font-size: 1.5rem;
+    
+    .bgviridian {
+        background-color: #558B6E;
     }
-}
-
-.number {
-    color: #800725;
-    font-size: 1.5em;
-    font-weight: 900 !important;
-}
-
-.book {
-    border-right: 1px solid black;
-}
-
-.notifications a {
-    color: #1D1E2C;
-    font-weight: 900 !important;
-    span {
-        background-color: #800725;
+    
+    .btnviridian {
+        border-color: #558B6E;
+        color: #558B6E;
+    }
+    
+    main {
+        background-color: #f7f7f7;
+        padding: 1rem;
+    }
+    
+    .active {
+        border: 1px solid $burgundy;
+        font-size: 1.2em;
+    }
+    
+    .active h1 {
+        color: #800725;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1.2em;
+    }
+    
+    .info h1 {
+        font-size: 1.5em;
+    }
+    
+    .subject {
+        background-color: #f6f6f6;
+    }
+    
+    .invite {
+        border: 1px solid #800725;
+        color: #800725;
+    }
+    
+    h2 {
+        font-size: 0.8em;
+    }
+    
+    h3 {
+        font-size: 1.7em;
+    }
+    
+    .reading {
+        width: 117%;
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+    
+    .reading img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    
+    .currentReading {
+        margin-top: 3.5rem !important;
+        width: 63%;
+        .bookTitle {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .number {
+        color: #800725;
+        font-size: 1.5em;
+        font-weight: 900 !important;
+    }
+    
+    .book {
+        border-right: 1px solid black;
+    }
+    
+    .notifications a {
+        color: #1D1E2C;
+        font-weight: 900 !important;
+        span {
+            background-color: #800725;
+            color: white;
+        }
+    }
+    
+    .location {
+        background-color: white;
+    }
+    
+    .container {
+        background-color: lightgray;
+        border-radius: 4px;
+    }
+    
+    .invitations {
+        width: 75%;
+        position: relative;
+        float: right;
+    }
+    
+    .notifications {
+        display: block;
+        width: 75%;
+        float: right;
+        p {
+            font-size: 1rem;
+        }
+    }
+    
+    .progressBar {
+        background-color: #558B6E;
+        border-radius: 4px 0px 0px 4px;
+        text-align: center;
         color: white;
     }
-}
-
-.location {
-    background-color: white;
-}
-
-.container {
-    background-color: lightgray;
-    border-radius: 4px;
-}
-
-.invitations {
-    width: 75%;
-    position: relative;
-    float: right;
-}
-
-.notifications {
-    display: block;
-    width: 75%;
-    float: right;
-    p {
-        font-size: 1rem;
+    
+    #calendarTitle {
+        font-family: sofia-pro, sans-serif;
+        font-size: 1.6rem;
     }
-}
-
-.progressBar {
-    background-color: #558B6E;
-    border-radius: 4px 0px 0px 4px;
-    text-align: center;
-    color: white;
-}
-
-#calendarTitle {
-    font-family: sofia-pro, sans-serif;
-    font-size: 1.6rem;
-}
-
-p {
-    font-family: sofia-pro, sans-serif;
-    font-size: 1rem;
-}
-
-.tabs {
-    margin-top: 1rem;
-}
-
-.circle {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    color: #fff;
-    text-align: center;
-    background: red;
-}
-
-.quiz {
-    width: 117%;
+    
     p {
         font-family: sofia-pro, sans-serif;
         font-size: 1rem;
     }
-}
-
-
-/* Settings */
-
-.settingsBox {
-    width: 100%;
-}
-
-.settingsPage {
-    h1 {
-        font-size: 1.2rem;
-        color: $midnight-green;
+    
+    .tabs {
+        margin-top: 1rem;
     }
-    .profileImg {
-        width: 35%;
+    
+    .circle {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        color: #fff;
+        text-align: center;
+        background: red;
     }
-    #profileImgBox {
-        justify-content: center;
-        width: 65%;
-        float: left;
+    
+    .quiz {
+        width: 117%;
+        p {
+            font-family: sofia-pro, sans-serif;
+            font-size: 1rem;
+        }
     }
-}
-
-.containerSettingsBox {
-    width: 80%;
-}
-
-.map {
-    border: #800725 1px solid;
-    padding: 500px;
-}
+    /* Settings */
+    
+    .settingsBox {
+        width: 100%;
+    }
+    
+    .settingsPage {
+        h1 {
+            font-size: 1.2rem;
+            color: $midnight-green;
+        }
+        .profileImg {
+            width: 35%;
+        }
+        #profileImgBox {
+            justify-content: center;
+            width: 65%;
+            float: left;
+        }
+    }
+    
+    .containerSettingsBox {
+        width: 80%;
+    }
+    
+    .map {
+        border: #800725 1px solid;
+        padding: 500px;
+    }
+    
+    .search {
+        border: #558B6E 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+        padding-right: 10px;
+    }
